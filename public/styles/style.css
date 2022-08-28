@@ -1,0 +1,61 @@
+/*
+#main .form-regist {
+	padding-top: 50px;
+}
+#main .form-regist .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+#main .form-regist .container > div.form-right{
+	width: 250px;
+}
+
+#main .form-regist .container .form-left table .tr-head {
+	background-color: var(--colorA);
+}
+
+#main .form-regist .container .form-left table tbody tr:nth-child(even) {
+	background-color: var(--colorAa);
+}
+
+#main .form-regist .container .form-left table td,
+#main .form-regist .container .form-left table th {
+	padding: 5px;
+}
+
+#main .form-regist .container .title {
+	text-transform: uppercase;
+	border-left: 4px solid var(--colorC);
+	padding: 10px 5px;
+	background-color: rgba(229, 229, 229, 0.5);
+	margin: 10px 0;
+
+}
+
+#main .form-regist .container .form-right .form--regist input,
+#main .form-regist .container .form-right .form--regist button{
+	display: block;
+	padding: 10px;
+	width: 100%;
+	margin: 10px 0;
+}
+
+#main .form-regist .container .form-right .form--regist button {
+	background-color: var(--colorC);
+	border: 0;
+}
+
+#main .form-regist .container .form-left table .td-option {
+	display: flex;
+	justify-content: space-between;
+	width: 140px;
+}
+
+button.ok, button.err {
+	border: 0;
+	padding: 2px;
+	cursor: pointer;
+}
+
+*/
