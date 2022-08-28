@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 
 app.use('/post', routes);
 
-
-app.listen(process.env.PORT , ()=>{
+const port = process.env.PORT || 3000
+app.listen(port , ()=>{
     console.log('Servidor ligado!')
 })
