@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path')
 const app = express();
@@ -30,6 +31,6 @@ app.get('/', (req, res) => {
 app.use('/post', routes);
 
 
-app.listen(2500, ()=>{
+app.listen(process.env.PORT , ()=>{
     console.log('Servidor ligado!')
 })
