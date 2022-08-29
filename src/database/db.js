@@ -1,25 +1,18 @@
 const mongoose = require('mongoose');
-const PASSWORD = '';
 mongoose.Promise = global.Promise;
 
+const USER = process.env.USER_MONGO
+const PASSWORD = process.env.PASSWORD_MONGO
+
 mongoose.connect(
-	`mongodb+srv://domingos3000:${process.env.PASSWORD_MONGO}@api-node-blog.zy23xgn.mongodb.net/?retryWrites=true&w=majority`
+	`mongodb+srv://${USER}:${PASSWORD}@api-node-blog.zy23xgn.mongodb.net/?retryWrites=true&w=majority`
 )
 	.then(() => {
-	console.log("Banco conectado!");
+	console.log("Connetion Mongo OK!");
 	})
 	.catch(err => {
-	console.log("Falha ao conectar " + err);
+	console.log("Failed connetion Mongo! => " + err);
 });
 
-// mongoose.connect('mongodb://localhost/blognode')
-// 	.then(() => {
-// 	console.log("Banco conectado!");
-// 	})
-// 	.catch(err => {
-// 	console.log("Falha ao conectar " + err);
-// });
-
-// mongodb+srv://domingos3000:<password>@api-node-blog.zy23xgn.mongodb.net/?retryWrites=true&w=majority
 
 module.exports = mongoose;

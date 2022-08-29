@@ -8,6 +8,7 @@ const routes = require('./src/routes/post')
 const bodyParser = require('body-parser');
 
 app.use(cors());
+
 app.use('/uploads', express.static(path.resolve(__dirname, 'src','uploads')));
 app.use(express.json());
 app.use(bodyParser.urlencoded({extends: true}))
