@@ -1,12 +1,9 @@
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
-const USER = process.env.USER_MONGO
-const PASSWORD = process.env.PASSWORD_MONGO
+const URI_MONGODB = process.env.URI_MONGO_CONNECT
 
-mongoose.connect(
-	`mongodb+srv://${USER}:${PASSWORD}@api-node-blog.zy23xgn.mongodb.net/?retryWrites=true&w=majority`
-)
+mongoose.connect(URI_MONGODB)
 	.then(() => {
 	console.log("Connetion Mongo OK!");
 	})
