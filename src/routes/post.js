@@ -50,6 +50,7 @@ routes.post('/add', storage.single('arquivo_upload'), async (req, res) => {
 		res.status(400).json({
 			message: "Request Failed! Try Again.",
 			status: 400,
+			error
 		})
 
 	} 
